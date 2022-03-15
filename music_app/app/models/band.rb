@@ -1,6 +1,6 @@
 class Band < ApplicationRecord
 
-    validates :name, null: false, uniqueness: true
+    validates :name, uniqueness: true
 
     has_many :albums,
         primary_key: :id,
